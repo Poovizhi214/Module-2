@@ -1,32 +1,39 @@
-# Exp.No:2b  
-## FUNCTIONS - PERFECT NUMBER
+
+# Exp.No:2c
+## BUILT-IN FUNCTIONS AND LAMBDA FUNCTIONS - RELATING TWO NUMBERS
+
+---
 
 ### AIM  
-To write a Python program to check if a number is a Perfect number using the concept of functions.
+To write a Python program to check the relation between two numbers — whether one number is greater than, equal to, or lesser than another — using a lambda function.
 
 ---
 
 ### ALGORITHM
 
 1. Begin the program.  
-2. Read the number `n` from the user using `input()`.  
-3. Convert the input to an integer.  
-4. Define the function `perfectNumber(n)` with the following steps:  
-    - Initialize a variable `factor_sum` to 0.  
-    - Iterate through all numbers from 1 to `n//2` (as divisors of a number can't be greater than half of it).  
-    - If a number `i` divides `n` perfectly (i.e., `n % i == 0`), add `i` to `factor_sum`.  
-    - If `factor_sum` is equal to `n`, then print the number is a perfect number. Otherwise, print it's not a perfect number.  
-5. Terminate the program.
+2. Use `eval()` to get two numbers (`num1` and `num2`) from the user.  
+3. Define a lambda function `max` that takes two arguments `x` and `y`.  
+4. The lambda function compares the numbers and prints:
+   - If `x > y`, then it prints: "`num2` is smaller than `num1`".
+   - Otherwise, it prints: "`num1` is smaller than `num2`".
+5. Call the lambda function by passing `num1` and `num2` as arguments.  
+6. Terminate the program.
 
 ---
 
 ### PROGRAM
 ```
-#Reg.No:
-#Name:
-#Add your Code Here
-
+#Reg.no 212222020018
+#Name POOVIZHI P
+a=int(input())
+b=int(input())
+f=lambda a,b: (f"{a} is smaller than {b}")  if a<b else(f"{a} is greater than {b}" if(a>b) else(f"{a} is equal to{b}"))
+print(f(a,b))
 ```
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/ee7de341-461d-40b7-b1fe-6fca4434af74)
+
 ### RESULT
+Thus the Python program using a lambda function to compare two numbers and display their relation was executed successfully and the output was verified.
